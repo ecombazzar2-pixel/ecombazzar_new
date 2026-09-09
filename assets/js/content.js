@@ -159,7 +159,7 @@ window.ECOM_CONTENT = {
 
       imageKey: 'upload17',
 
-      link: '#'
+      link: 'https://www.ecombazzar.com/contact.html'
     },
 
 
