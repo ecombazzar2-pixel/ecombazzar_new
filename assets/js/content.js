@@ -138,7 +138,7 @@ window.ECOM_CONTENT = {
 
       client: 'La Glamor',
 
-      title: 'Beauty Ecommerce Growht',
+      title: 'Beauty Ecommerce Growth',
 
       description: 'Ecommerce operations, store optimisation, product management and growth strategy for a fashion-led online store.',
 
@@ -174,7 +174,7 @@ window.ECOM_CONTENT = {
 
       imageKey: 'upload34',
 
-      link: '#'
+      link: 'https://www.ecombazzar.com/contact.html'
     },
 
 
@@ -189,7 +189,7 @@ window.ECOM_CONTENT = {
 
       imageKey: 'upload15',
 
-      link: '#'
+      link: 'https://www.ecombazzar.com/contact.html'
     },
 
 
@@ -204,7 +204,7 @@ window.ECOM_CONTENT = {
 
       imageKey: 'upload5',
 
-      link: '#'
+      link: 'https://www.ecombazzar.com/contact.html'
     }
 
   ]
