@@ -394,3 +394,436 @@ main{overflow:hidden}
 .portfolio-arrow{
   transform:rotate(45deg);
 }
+
+/* =========================================================
+   PORTFOLIO - MOBILE FIX
+   Paste at VERY BOTTOM of style.css
+========================================================= */
+
+@media screen and (max-width: 760px){
+
+  html,
+  body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+
+  /* =============================
+     PORTFOLIO HERO
+  ============================== */
+
+  body[data-page="portfolio"] .page-hero{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:32px;
+
+    min-height:auto;
+
+    padding:
+      120px
+      20px
+      50px;
+  }
+
+
+  body[data-page="portfolio"] .page-hero-copy{
+    padding:0;
+  }
+
+
+  body[data-page="portfolio"] .page-hero h1{
+    font-size:clamp(48px,14vw,68px);
+    line-height:.94;
+    letter-spacing:-.055em;
+
+    margin-bottom:20px;
+  }
+
+
+  body[data-page="portfolio"] .page-hero-copy > p:last-child{
+    font-size:16px;
+    line-height:1.65;
+  }
+
+
+  body[data-page="portfolio"] .page-hero-image{
+    width:100%;
+    height:480px;
+    min-height:0;
+
+    border-radius:26px;
+
+    overflow:hidden;
+  }
+
+
+  body[data-page="portfolio"] .page-hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+
+  /* =============================
+     FEATURED PROJECT
+  ============================== */
+
+  .portfolio-feature{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+
+    gap:0 !important;
+
+    padding:
+      70px
+      20px !important;
+  }
+
+
+  .portfolio-feature-image{
+    width:100%;
+
+    min-height:0 !important;
+    height:480px;
+
+    border-radius:
+      26px
+      26px
+      0
+      0 !important;
+
+    overflow:hidden;
+  }
+
+
+  .portfolio-feature-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+
+  .portfolio-feature-copy{
+    width:100%;
+
+    padding:
+      38px
+      24px !important;
+
+    border-radius:
+      0
+      0
+      26px
+      26px !important;
+  }
+
+
+  .portfolio-feature-meta{
+    display:flex;
+    flex-direction:column;
+
+    gap:6px;
+
+    margin-bottom:24px;
+  }
+
+
+  .portfolio-feature-copy h2{
+    font-size:clamp(38px,11vw,52px);
+    line-height:1;
+    letter-spacing:-.05em;
+
+    margin-bottom:20px;
+  }
+
+
+  .portfolio-feature-copy > p:not(.eyebrow){
+    font-size:15px;
+    line-height:1.65;
+  }
+
+
+  /* =============================
+     SELECTED WORK
+  ============================== */
+
+  body[data-page="portfolio"] .section-pad{
+    padding:
+      75px
+      20px;
+  }
+
+
+  body[data-page="portfolio"] .section-heading{
+    margin-bottom:38px;
+  }
+
+
+  body[data-page="portfolio"] .section-heading h2{
+    font-size:clamp(40px,11vw,56px);
+    line-height:1;
+  }
+
+
+  body[data-page="portfolio"] .section-copy{
+    font-size:15px;
+    line-height:1.65;
+  }
+
+
+  /* =============================
+     PORTFOLIO GRID
+  ============================== */
+
+  .portfolio-editorial-grid{
+    display:grid !important;
+
+    grid-template-columns:1fr !important;
+
+    gap:52px !important;
+
+    width:100%;
+  }
+
+
+  .portfolio-editorial-card,
+  .portfolio-editorial-large{
+    width:100%;
+
+    min-width:0;
+
+    grid-column:auto !important;
+  }
+
+
+  .portfolio-editorial-image,
+  .portfolio-editorial-large .portfolio-editorial-image{
+    width:100%;
+
+    height:480px !important;
+
+    border-radius:24px;
+
+    overflow:hidden;
+  }
+
+
+  .portfolio-editorial-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+  }
+
+
+  .portfolio-editorial-copy{
+    padding:
+      18px
+      2px
+      0;
+  }
+
+
+  .portfolio-editorial-meta{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    font-size:10px;
+  }
+
+
+  .portfolio-editorial-copy h3{
+    font-size:clamp(32px,9vw,44px);
+
+    line-height:1.03;
+
+    margin:
+      14px
+      0
+      10px;
+  }
+
+
+  .portfolio-editorial-copy p{
+    font-size:15px;
+
+    line-height:1.65;
+  }
+
+
+  /* =============================
+     PORTFOLIO ARROW
+  ============================== */
+
+  .portfolio-arrow{
+    width:44px;
+    height:44px;
+
+    top:16px;
+    right:16px;
+
+    font-size:17px;
+  }
+
+
+  /* =============================
+     CAPABILITIES
+  ============================== */
+
+  .portfolio-capability{
+    display:grid !important;
+
+    grid-template-columns:1fr !important;
+
+    gap:34px !important;
+
+    margin:
+      16px
+      12px !important;
+
+    padding:
+      48px
+      24px !important;
+
+    border-radius:26px;
+  }
+
+
+  .portfolio-capability h2{
+    font-size:clamp(38px,10vw,52px);
+
+    line-height:1;
+
+    letter-spacing:-.05em;
+  }
+
+
+  .portfolio-capability-list{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:flex-start;
+
+    gap:8px;
+  }
+
+
+  .portfolio-capability-list span{
+    padding:
+      10px
+      13px;
+
+    font-size:11px;
+
+    white-space:normal;
+  }
+
+
+  /* =============================
+     CTA
+  ============================== */
+
+  body[data-page="portfolio"] .cta-panel{
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    margin:
+      20px
+      12px
+      60px;
+
+    padding:
+      44px
+      24px;
+
+    border-radius:26px;
+  }
+
+
+  body[data-page="portfolio"] .cta-panel h2{
+    font-size:clamp(40px,11vw,56px);
+
+    line-height:1;
+  }
+
+
+  body[data-page="portfolio"] .cta-panel .button{
+    width:100%;
+  }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px){
+
+  body[data-page="portfolio"] .page-hero{
+    padding:
+      110px
+      16px
+      40px;
+  }
+
+
+  body[data-page="portfolio"] .page-hero-image{
+    height:400px;
+  }
+
+
+  .portfolio-feature{
+    padding:
+      55px
+      16px !important;
+  }
+
+
+  .portfolio-feature-image{
+    height:400px;
+  }
+
+
+  .portfolio-feature-copy{
+    padding:
+      32px
+      20px !important;
+  }
+
+
+  body[data-page="portfolio"] .section-pad{
+    padding:
+      60px
+      16px;
+  }
+
+
+  .portfolio-editorial-image,
+  .portfolio-editorial-large .portfolio-editorial-image{
+    height:400px !important;
+  }
+
+
+  .portfolio-capability{
+    margin:
+      12px
+      10px !important;
+
+    padding:
+      40px
+      20px !important;
+  }
+
+}
